@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
+   <children>
+      <BorderPane layoutY="-8.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="120.0" layoutY="21.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="377.0" style="-fx-background-color: #008080; -fx-border-color: white;" text="View in GitHub" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="29.0" layoutY="12.0">
+                     <image>
+                        <Image url="@../../../../DESARROLLO%20INTERFACES/Examen/github_white.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="22.0" prefWidth="600.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="149.0" fitWidth="152.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@../../../../DESARROLLO%20INTERFACES/Examen/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="6.0" layoutY="5.0" prefHeight="92.0" prefWidth="185.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="52.0" fitWidth="56.0" onMouseClicked="#handleSend" styleClass="mybutton">
+                                 <image>
+                                    <Image url="@../../../../DESARROLLO%20INTERFACES/Examen/send.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="My profile" textFill="TEAL">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Jay R." textFill="#686565">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text=" “Doyou know me?!”" />
+                           </tooltip>
+                        </Label>
+                        <Label text="Programmers can design" textFill="#a8a6a6">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
