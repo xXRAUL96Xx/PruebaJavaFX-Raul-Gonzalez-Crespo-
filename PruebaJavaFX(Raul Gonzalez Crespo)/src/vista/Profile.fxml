@@ -22,7 +22,7 @@
                   </Button>
                   <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="29.0" layoutY="12.0">
                      <image>
-                        <Image url="@../../../../DESARROLLO%20INTERFACES/Examen/github_white.png" />
+                        <Image url="@images/github_white.png" />
                      </image>
                   </ImageView>
                </children></AnchorPane>
@@ -45,7 +45,7 @@
                <children>
                   <ImageView fitHeight="149.0" fitWidth="152.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../../../../DESARROLLO%20INTERFACES/Examen/profilephoto.png" />
+                        <Image url="@images/profilephoto.png" />
                      </image>
                   </ImageView>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -54,7 +54,7 @@
                            <children>
                               <ImageView fitHeight="52.0" fitWidth="56.0" onMouseClicked="#handleSend" styleClass="mybutton">
                                  <image>
-                                    <Image url="@../../../../DESARROLLO%20INTERFACES/Examen/send.png" />
+                                    <Image url="@images/send.png" />
                                  </image>
                                  <effect>
                                     <DropShadow />
